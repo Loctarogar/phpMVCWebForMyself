@@ -25,6 +25,9 @@ spl_autoload_register(function ($class) {
     }
 });
 
+Router::add('^pages/?(?P<action>[a-z-]+)?$', ['controller' => 'Main']);
+
+//default routes
 Router::add('^$', ['controller' => 'Main', 'action' => 'index']);
 Router::add('^(?P<controller>[a-z-]+)/?(?P<action>[a-z-]+)?$');
 
