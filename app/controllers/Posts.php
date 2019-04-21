@@ -1,15 +1,19 @@
 <?php
 
+namespace app\controllers;
 
-class Posts
+use vendor\core\base\Controller as Controller;
+
+class Posts extends Controller
 {
-    public function __construct()
+    public function __construct($route)
     {
-        echo "Posts class";
+        parent::__construct($route);
     }
 
     public function indexAction()
     {
-        echo "Posts index method";
+        debug($this->route);
+        echo "</br>Posts index method <h3>Works</h3></br>";
     }
 }

@@ -1,5 +1,11 @@
 <?php
 
+// to show errors
+ini_set('display_errors', 1);
+error_reporting(-1);
+
+use vendor\core\Router;
+
 $query = rtrim($_SERVER['QUERY_STRING'], '/');
 
 //constant for current directory
@@ -11,7 +17,6 @@ define('ROOT', dirname(__DIR__));
 //'app' directory
 define('APP', dirname(__DIR__).'/app');
 
-require '../vendor/core/Router.php';
 require '../vendor/libs/functions.php';
 
 //require '../app/controllers/Main.php';
@@ -19,9 +24,15 @@ require '../vendor/libs/functions.php';
 //require '../app/controllers/PostsNew.php';
 
 spl_autoload_register(function ($class) {
-    $file = APP."/controllers/$class.php";
+    $file = ROOT.'/'.str_replace('\\', '/', $class).'.php';
+
     if(is_file($file)){
+        echo 'debug($class);';
+        debug($class);
         require_once $file;
+    }else{
+        echo 'debug($class) wasn\'t found;';
+        debug($class);
     }
 });
 
