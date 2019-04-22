@@ -2,6 +2,7 @@
 
 namespace vendor\core;
 
+
 class Router{
     /**
      * all routes
@@ -79,6 +80,7 @@ class Router{
     {
         if(self::matchRoute($url)){
             $controller = 'app\controllers\\'.self::$route['controller'];
+            debug(self::$route);
             if(class_exists($controller)){
                 $cObj = new $controller(self::$route);
                 $action = self::loverCamelCase(self::$route['action'])."Action";

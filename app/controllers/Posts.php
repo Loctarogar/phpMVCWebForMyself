@@ -2,14 +2,11 @@
 
 namespace app\controllers;
 
-use vendor\core\base\Controller as Controller;
+use vendor\core\base\Controller;
 
 class Posts extends Controller
 {
-    public function __construct($route)
-    {
-        parent::__construct($route);
-    }
+
 
     public function indexAction()
     {
