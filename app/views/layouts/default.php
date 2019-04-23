@@ -74,7 +74,7 @@
         <br>
         <br>
 
-        <h1><?= $content ?></h1>
+        <h1><?php echo $content ?></h1>
 
     </div>
 
