@@ -88,6 +88,7 @@ class Router{
                 $action = self::loverCamelCase(self::$route['action'])."Action";
                 if(method_exists($cObj, $action)){
                     $cObj->$action();
+                    $cObj->getView();
                 }else{
                     echo "Method ".$controller." ".$action." doesn\'t found";
                 }
