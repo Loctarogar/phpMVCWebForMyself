@@ -2,13 +2,10 @@
 
 namespace app\controllers;
 
-class PostsNew
-{
-    public function __construct()
-    {
-        echo "PostsNew class";
-    }
+use vendor\core\base\Controller;
 
+class PostsNew extends Controller
+{
     public function indexAction()
     {
         echo "PostsNew index method";

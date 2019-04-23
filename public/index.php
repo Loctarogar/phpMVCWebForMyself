@@ -18,17 +18,11 @@ define('ROOT', dirname(__DIR__));
 define('APP', dirname(__DIR__).'/app');
 
 require '../vendor/libs/functions.php';
-
-//require '../app/controllers/Main.php';
-//require '../app/controllers/Posts.php';
-//require '../app/controllers/PostsNew.php';
-
+debug($_GET);
 spl_autoload_register(function ($class) {
     $file = ROOT.'/'.str_replace('\\', '/', $class).'.php';
 
     if(is_file($file)){
-        echo 'debug($class);';
-        debug($class);
         require_once $file;
     }else{
         echo 'debug($class) wasn\'t found;';
@@ -36,8 +30,8 @@ spl_autoload_register(function ($class) {
     }
 });
 
-Router::add('^pages/?(?P<action>[a-z-]+)?$', ['controller' => 'Main']);
-
+Router::add('^page/?(?P<action>[a-z-]+)?/?(?P<alias>[a-z-]+)?$', ['controller' => 'Page']);
+Router::add('^page/?(?P<alias>[a-z-]+)?$', ['controller' => 'Page', 'action' => 'view']);
 //default routes
 Router::add('^$', ['controller' => 'Main', 'action' => 'index']);
 Router::add('^(?P<controller>[a-z-]+)/?(?P<action>[a-z-]+)?$');

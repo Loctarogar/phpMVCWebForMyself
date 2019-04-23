@@ -78,9 +78,11 @@ class Router{
      */
     public static function dispatch($url)
     {
+        $url = self::removeQueryString($url);
+        //var_dump($url);
         if(self::matchRoute($url)){
             $controller = 'app\controllers\\'.self::$route['controller'];
-            debug(self::$route);
+            //debug(self::$route);
             if(class_exists($controller)){
                 $cObj = new $controller(self::$route);
                 $action = self::loverCamelCase(self::$route['action'])."Action";
@@ -109,5 +111,16 @@ class Router{
     protected static function loverCamelCase($name)
     {
         return lcfirst(self::upperCamelCase($name));
+    }
+
+    protected static function removeQueryString($url){
+        if($url){
+            $params = explode('&',$url);
+            if(false === strpos($params[0], '=')){
+                return rtrim($params[0], '/');
+            }else{
+                return '';
+            }
+        }
     }
 }

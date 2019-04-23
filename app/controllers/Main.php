@@ -2,13 +2,10 @@
 
 namespace app\controllers;
 
-class Main
-{
-    public function __construct()
-    {
-        echo "Main class";
-    }
+use vendor\core\base\Controller;
 
+class Main extends Controller
+{
     public function indexAction()
     {
         echo "Main index method";
