@@ -12,7 +12,11 @@ class Posts extends App
         //to change layout for single method
         //$this->layout = 'mainLayout';
         //to change view for single method
-        $this->view = 'main';
+        //$this->view = 'main';
+        $name = 'My name';
+        $hi = "Hello";
+        $thirdvar = "thirdvar";
+        $this->set(compact('name', 'hi', 'thirdvar'));
     }
 
     public function mainAction()

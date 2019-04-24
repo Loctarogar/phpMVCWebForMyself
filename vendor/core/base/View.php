@@ -38,8 +38,12 @@ class View {
         var_dump($this->view);
     }
 
-    public function render()
+    public function render($vars)
     {
+        //debug($vars);
+        if(is_array($vars)){
+            extract($vars);
+        }
         $file_view = APP."/views/{$this->route['controller']}/{$this->view}.php";
         // output is stored in an internal buffer
         ob_start();
