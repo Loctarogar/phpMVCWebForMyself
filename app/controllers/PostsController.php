@@ -2,7 +2,7 @@
 
 namespace app\controllers;
 
-class Posts extends App
+class PostsController extends AppController
 {
     //to change layout for entire Posts class
     public $layout = 'main';
