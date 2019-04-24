@@ -28,8 +28,14 @@ class View {
     public function __construct($route, $layout = '', $view = '')
     {
         $this->route = $route;
-        $this->layout = $layout ?: LAYOUT;
+        if($layout === false){
+            $this->layout = false;
+        }else{
+            $this->layout = $layout ?: LAYOUT;
+        }
         $this->view = $view;
+        var_dump($this->layout);
+        var_dump($this->view);
     }
 
     public function render()
@@ -42,13 +48,18 @@ class View {
         }else{
             echo "<p> The view {$file_view} doesn't found </p>";
         }
-        //data from buffer now in $content variable
+
+        //data from buffer now in $content variable to send in layout
         $content = ob_get_clean();
-        $file_layout = APP."/views/layouts/{$this->layout}.php";
-        if(is_file($file_layout)){
-            require $file_layout;
-        }else{
-            echo "<h2>{$file_layout}</h2>template doesn't found";
+        //
+
+        if(false !== $this->layout){
+            $file_layout = APP."/views/layouts/{$this->layout}.php";
+            if(is_file($file_layout)){
+                require $file_layout;
+            }else{
+                echo "<h2>{$file_layout}</h2>template doesn't found";
+            }
         }
     }
 }

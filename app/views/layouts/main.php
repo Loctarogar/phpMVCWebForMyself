@@ -6,7 +6,7 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Jekyll v3.8.5">
-    <title>Default layout</title>
+    <title>Main layout</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/starter-template/">
 
@@ -73,7 +73,7 @@
         <br>
         <br>
         <br>
-        <h1>Default layout</h1>
+        <h1>Main layout</h1>
 
         <!-- $content variable defined in View->render -->
         <h2><?php echo $content ?></h2>
