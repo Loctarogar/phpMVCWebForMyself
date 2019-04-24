@@ -2,10 +2,15 @@
 
 namespace app\controllers;
 
+use app\models\Main;
+
 class MainController extends AppController
 {
     public function indexAction()
     {
-        echo "Main index method";
+        $model = new Main();
+        $posts = $model->findAll();
+        $posts3 = $model->findAll();
+        $this->set(compact('posts'));
     }
 }
