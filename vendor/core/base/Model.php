@@ -29,4 +29,8 @@ abstract class Model{
                       WHERE $field = ? LIMIT 1";
         return $this->pdo->query($sql, [$id]);
     }
+
+    public function findBySql($sql, $params = []){
+        return $this->pdo->query($sql, $params);
+    }
 }
