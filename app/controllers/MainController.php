@@ -15,8 +15,9 @@ class MainController extends AppController
         //$post = $model->findOne(2);
         //if i want define column here: ('data', 'column)
         //$post = $model->findOne('title2', 'title');
-        $data = $model->findBySql("SELECT * FROM $model->table
-                 WHERE title LIKE ?", ['%le2%']);
+        //$data = $model->findBySql("SELECT * FROM $model->table
+        //         WHERE title LIKE ?", ['%le2%']);
+        $data = $model->findLike('le', 'title');
         debug($data);
         $this->set(compact('posts'));
     }
