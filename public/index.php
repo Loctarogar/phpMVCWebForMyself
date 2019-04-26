@@ -8,8 +8,11 @@ use vendor\core\Router;
 
 $query = rtrim($_SERVER['QUERY_STRING'], '/');
 
-//constant for current directory
+//constant for directories
+//public directory
 define('WWW', __DIR__);
+//libs directory
+define('LIBS', dirname(__DIR__).'/vendor/libs');
 //constant for 'core' directory
 define('CORE', dirname(__DIR__).'/vendor/core');
 //'root' directory
@@ -26,8 +29,8 @@ spl_autoload_register(function ($class) {
     if(is_file($file)){
         require_once $file;
     }else{
-        echo 'debug($class) wasn\'t found;';
-        //debug($class);
+        echo 'debug{$class} wasn\'t found;';
+        debug($class);
     }
 });
 

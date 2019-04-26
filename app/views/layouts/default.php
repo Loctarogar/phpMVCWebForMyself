@@ -77,8 +77,8 @@
 
         <!-- $content variable defined in View->render -->
         <h2><?php echo $content ?></h2>
-        <?php debug(\vendor\core\Db::$countSql) ?>
-        <?php debug(\vendor\core\Db::$queries) ?>
+        <?php // debug(\vendor\core\Db::$countSql) ?>
+        <?php // debug(\vendor\core\Db::$queries) ?>
 
     </div>
 
