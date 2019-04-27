@@ -10,9 +10,10 @@ class MainController extends AppController
 {
     public function indexAction()
     {
-        App::$app->getList();
+        //App::$app->getList();
         $model = new Main();
         $posts = R::findAll('posts');
+        App::$app->cache->set('posts', $posts);
         $categories = R::findAll('category');
         $this->set(compact('posts', 'categories'));
     }

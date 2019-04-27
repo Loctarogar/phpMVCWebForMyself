@@ -21,6 +21,8 @@ define('ROOT', dirname(__DIR__));
 define('APP', dirname(__DIR__).'/app');
 //default template name for layout
 define('LAYOUT', 'default');
+//const for cache directory
+define('CACHE', dirname(__DIR__).'/tmp/cache');
 
 require '../vendor/libs/functions.php';
 //debug($_GET);
