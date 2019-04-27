@@ -12,8 +12,13 @@ class MainController extends AppController
     {
         //App::$app->getList();
         $model = new Main();
-        $posts = R::findAll('posts');
-        App::$app->cache->set('posts', $posts);
+        R::fancyDebug(true);
+        $posts = App::$app->cache->get('posts');
+        if(!$posts){
+            $posts = R::findAll('posts');
+            App::$app->cache->set('posts', $posts);
+        }
+
         $categories = R::findAll('category');
         $this->set(compact('posts', 'categories'));
     }
