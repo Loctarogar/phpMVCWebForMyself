@@ -10,16 +10,22 @@ class MainController extends AppController
 {
     public function indexAction()
     {
-        //App::$app->getList();
         $model = new Main();
-        R::fancyDebug(true);
-        $posts = App::$app->cache->get('posts');
-        if(!$posts){
-            $posts = R::findAll('posts');
-            App::$app->cache->set('posts', $posts);
-        }
-
+        $posts = R::findAll('posts');
+        $post = R::findOne('posts', 'id = 2');
         $categories = R::findAll('category');
-        $this->set(compact('posts', 'categories'));
+        $this->set(compact('posts', 'categories', 'post'));
+    }
+
+    public function testAction(){
+        $model = new Main();
+        if($this->isAjax()){
+            $post = \R::findOne('posts', "id = {$_POST['id']}");
+            debug($post);
+            die;
+        }
+        echo "Not an Ajax";
+        die;
+        //$this->layout = 'test';
     }
 }

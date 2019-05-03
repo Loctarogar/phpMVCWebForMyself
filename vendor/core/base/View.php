@@ -34,8 +34,6 @@ class View {
             $this->layout = $layout ?: LAYOUT;
         }
         $this->view = $view;
-        var_dump($this->layout);
-        var_dump($this->view);
     }
 
     public function render($vars)

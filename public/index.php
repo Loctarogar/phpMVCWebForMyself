@@ -30,9 +30,6 @@ spl_autoload_register(function ($class) {
     $file = ROOT.'/'.str_replace('\\', '/', $class).'.php';
     if(is_file($file)){
         require_once $file;
-    }else{
-        echo 'debug{$class} wasn\'t found;';
-        debug($class);
     }
 });
 
