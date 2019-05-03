@@ -1,4 +1,1 @@
-<?php
-    echo $post['id']."<br />";
-    echo $post['text']."<br />";
-?>
+<h1>Test view</h1>
