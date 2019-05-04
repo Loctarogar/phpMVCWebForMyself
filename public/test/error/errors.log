@@ -1,0 +1,26 @@
+[2019-05-05 00:02:00] Error text: Undefined variable: test | file: /var/www/phpMVCWebForMyself/public/test/error/index.php | Line: 64
+=Nex Error=
+[2019-05-05 00:02:07] Error text: Undefined variable: test | file: /var/www/phpMVCWebForMyself/public/test/error/index.php | Line: 64
+=Nex Error=
+[2019-05-05 00:02:36] Error text: Undefined variable: test | file: /var/www/phpMVCWebForMyself/public/test/error/index.php | Line: 64
+=Next Error=
+[2019-05-05 00:07:13] Error text: Uncaught TypeError: Argument 1 passed to ErrorHandler::exceptionHandler() must be an instance of Exception, instance of Error given in /var/www/phpMVCWebForMyself/public/test/error/index.php:46
+Stack trace:
+#0 [internal function]: ErrorHandler->exceptionHandler(Object(Error))
+#1 {main}
+  thrown | file: /var/www/phpMVCWebForMyself/public/test/error/index.php | Line: 46
+=Next Error=
+[2019-05-05 00:07:28] Error text: Uncaught TypeError: Argument 1 passed to ErrorHandler::exceptionHandler() must be an instance of Exception, instance of Error given in /var/www/phpMVCWebForMyself/public/test/error/index.php:46
+Stack trace:
+#0 [internal function]: ErrorHandler->exceptionHandler(Object(Error))
+#1 {main}
+  thrown | file: /var/www/phpMVCWebForMyself/public/test/error/index.php | Line: 46
+=Next Error=
+[2019-05-05 00:07:41] Error text: exception | file: /var/www/phpMVCWebForMyself/public/test/error/index.php | Line: 68
+=Next Error=
+[2019-05-05 00:07:41] Error text:  | file:  | Line: 
+=Next Error=
+[2019-05-05 00:07:50] Error text: exception | file: /var/www/phpMVCWebForMyself/public/test/error/index.php | Line: 68
+=Next Error=
+[2019-05-05 00:07:50] Error text:  | file:  | Line: 
+=Next Error=

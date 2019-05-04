@@ -23,16 +23,18 @@ class ErrorHandler{
         set_error_handler([$this, "errorHandler"]);
         ob_start();
         register_shutdown_function([$this, "fatalErrorHandler"]);
+        set_exception_handler([$this, "exceptionHandler"]);
     }
 
     public function errorHandler($errno, $errstr, $errfile, $errline){
-        //var_dump($errno, $errstr, $errfile, $errline);
+        error_log("[".date('Y-m-d H:i:s')."] Error text: {$errstr} | file: {$errfile} | Line: {$errline}\n=Next Error=\n", 3, __DIR__.'/errors.log');
         $this->displayError($errno, $errstr, $errfile, $errline);
         return true;
     }
 
     public function fatalErrorHandler(){
         $error = error_get_last();
+        error_log("[".date('Y-m-d H:i:s')."] Error text: {$error['message']} | file: {$error['file']} | Line: {$error['line']}\n=Next Error=\n", 3, __DIR__.'/errors.log');
         if( !empty($error) AND $error['type'] & (E_ERROR | E_PARSE | E_COMPILE_ERROR | E_CORE_ERROR) ){
             ob_end_clean();
             $this->displayError($error['type'], $error['message'], $error['file'], $error['line']);
@@ -40,6 +42,13 @@ class ErrorHandler{
             ob_end_flush();
         }
     }
+
+    public function exceptionHandler(Exception $e){
+        error_log("[".date('Y-m-d H:i:s')."] Error text: {$e->getMessage()} | file: {$e->getFile()} | Line: {$e->getLine()}\n=Next Error=\n", 3, __DIR__.'/errors.log');
+        $this->displayError("Exception", $e->getMessage(), $e->getFile(), $e->getLine(), $e->getCode());
+    }
+
+
 
     protected function displayError($errno, $errstr, $errfile, $errline, $response = 500){
         http_response_code($response);
@@ -54,5 +63,6 @@ class ErrorHandler{
 
 new ErrorHandler();
 
-test();
-echo $test;
+//echo $test;
+//test();
+//throw new Exception("exception", 404);
