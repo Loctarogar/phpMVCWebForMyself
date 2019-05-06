@@ -1,6 +1,7 @@
 <?php
 
 namespace vendor\core;
+
 use vendor\core\Registry;
 
 class App{
@@ -9,5 +10,6 @@ class App{
     public function __construct()
     {
         self::$app = Registry::instance();
+        new ErrorHandler();
     }
 }

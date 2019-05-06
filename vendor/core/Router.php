@@ -90,14 +90,17 @@ class Router{
                     $cObj->$action();
                     $cObj->getView();
                 }else{
-                    echo "Method ".$controller." ".$action." doesn\'t found";
+                    //echo "Method ".$controller." ".$action." doesn\'t found";
+                    throw new \Exception("Method ".$controller." ".$action." doesn\'t found", 404);
                 }
             }else{
-                echo 'Error: Controller doesn\'t exists';
+                //echo 'Error: Controller doesn\'t exist';
+                throw new \Exception("Controller doesn\'t exist", 404);
             }
         }else{
-            http_response_code(404);
-            include '404.html';
+            //http_response_code(404);
+            //include '404.html';
+            throw new \Exception("Page doesn't found", 404);
         }
     }
 

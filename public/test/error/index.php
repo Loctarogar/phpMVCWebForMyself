@@ -7,6 +7,7 @@
 
 // this CONST has value 1 to show all errors. so called development mod
 // i can change it to 0, to suppress errors. production mod
+/**
 ini_set('display_errors', 1);
 define("DEBUG", 1);
 
@@ -62,6 +63,7 @@ class ErrorHandler{
 }
 
 new ErrorHandler();
+*/
 
 //echo $test;
 //test();

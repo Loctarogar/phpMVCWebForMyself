@@ -1,10 +1,12 @@
 <?php
 
 // to show errors
-ini_set('display_errors', 1);
-error_reporting(-1);
+//ini_set('display_errors', 1);
+//error_reporting(-1);
 
 use vendor\core\Router;
+
+define("DEBUG", 0);
 
 $query = rtrim($_SERVER['QUERY_STRING'], '/');
 
