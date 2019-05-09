@@ -1,12 +1,12 @@
-[2019-05-06 22:04:19] Error text: Controller doesn\'t exist | file: /var/www/phpMVCWebForMyself/vendor/core/Router.php | Line: 98
+[2019-05-09 16:18:50] Error text: Undefined variable: test | file: /var/www/phpMVCWebForMyself/app/controllers/MainController.php | Line: 14
 =Next Error=
-[2019-05-06 22:04:19] Error text:  | file:  | Line: 
+[2019-05-09 16:18:50] Error text:  | file:  | Line: 
 =Next Error=
-[2019-05-06 22:04:27] Error text:  | file:  | Line: 
+[2019-05-09 16:19:08] Error text: Undefined variable: test | file: /var/www/phpMVCWebForMyself/app/controllers/MainController.php | Line: 14
 =Next Error=
-[2019-05-06 22:04:32] Error text: syntax error, unexpected '$posts' (T_VARIABLE) | file: /var/www/phpMVCWebForMyself/app/controllers/MainController.php | Line: 14
+[2019-05-09 16:19:08] Error text: Function name must be a string | file: /var/www/phpMVCWebForMyself/app/controllers/MainController.php | Line: 14
 =Next Error=
-[2019-05-06 22:04:33] Error text:  | file:  | Line: 
+[2019-05-09 16:19:08] Error text:  | file:  | Line: 
 =Next Error=
-[2019-05-06 22:05:10] Error text:  | file:  | Line: 
+[2019-05-09 16:19:16] Error text:  | file:  | Line: 
 =Next Error=

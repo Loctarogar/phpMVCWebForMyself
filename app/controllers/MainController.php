@@ -21,7 +21,7 @@ class MainController extends AppController
         $model = new Main();
         if($this->isAjax()){
             $post = \R::findOne('posts', "id = {$_POST['id']}");
-            //using namew with underscore '_' for ajax files
+            //using name with underscore '_' for ajax files
             $this->loadView('_test', compact('post'));
             die;
         }
