@@ -56,6 +56,7 @@ class Router{
     {
         foreach (self::$routes as $pattern => $route){
             if(preg_match("#$pattern#i", $url, $matches)){
+                debug($matches);
                 foreach ($matches as $k => $v) {
                     if(is_string($k)){
                         $route[$k] = $v;
@@ -95,7 +96,7 @@ class Router{
                 }
             }else{
                 //echo 'Error: Controller doesn\'t exist';
-                throw new \Exception("Controller doesn\'t exist", 404);
+                throw new \Exception("Controller $controller doesn\'t exist", 404);
             }
         }else{
             //http_response_code(404);

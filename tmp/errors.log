@@ -30,3 +30,27 @@
 =Next Error=
 [2019-05-09 17:00:54] Error text:  | file:  | Line: 
 =Next Error=
+[2019-05-09 17:32:42] Error text: Controller doesn\'t exist | file: /var/www/phpMVCWebForMyself/vendor/core/Router.php | Line: 98
+=Next Error=
+[2019-05-09 17:32:42] Error text:  | file:  | Line: 
+=Next Error=
+[2019-05-09 17:32:43] Error text: Controller doesn\'t exist | file: /var/www/phpMVCWebForMyself/vendor/core/Router.php | Line: 98
+=Next Error=
+[2019-05-09 17:32:43] Error text:  | file:  | Line: 
+=Next Error=
+[2019-05-09 17:33:54] Error text: Controller doesn\'t exist | file: /var/www/phpMVCWebForMyself/vendor/core/Router.php | Line: 98
+=Next Error=
+[2019-05-09 17:33:54] Error text:  | file:  | Line: 
+=Next Error=
+[2019-05-09 17:36:05] Error text: Controller app\controllers\TestController doesn\'t exist | file: /var/www/phpMVCWebForMyself/vendor/core/Router.php | Line: 98
+=Next Error=
+[2019-05-09 17:36:05] Error text:  | file:  | Line: 
+=Next Error=
+[2019-05-09 17:37:57] Error text: Controller app\controllers\TestController doesn\'t exist | file: /var/www/phpMVCWebForMyself/vendor/core/Router.php | Line: 99
+=Next Error=
+[2019-05-09 17:37:57] Error text:  | file:  | Line: 
+=Next Error=
+[2019-05-09 17:42:27] Error text: Controller app\controllers\TestController doesn\'t exist | file: /var/www/phpMVCWebForMyself/vendor/core/Router.php | Line: 99
+=Next Error=
+[2019-05-09 17:42:27] Error text:  | file:  | Line: 
+=Next Error=
