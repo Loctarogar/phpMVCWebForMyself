@@ -54,3 +54,13 @@
 =Next Error=
 [2019-05-09 17:42:27] Error text:  | file:  | Line: 
 =Next Error=
+[2019-05-09 17:54:41] Error text: Controller app\controllers\TestController doesn\'t exist | file: /var/www/phpMVCWebForMyself/vendor/core/Router.php | Line: 106
+=Next Error=
+[2019-05-09 17:54:41] Error text:  | file:  | Line: 
+=Next Error=
+[2019-05-09 17:55:12] Error text:  | file:  | Line: 
+=Next Error=
+[2019-05-09 17:55:23] Error text: Controller app\controllers\TestController doesn\'t exist | file: /var/www/phpMVCWebForMyself/vendor/core/Router.php | Line: 106
+=Next Error=
+[2019-05-09 17:55:23] Error text:  | file:  | Line: 
+=Next Error=

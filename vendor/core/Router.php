@@ -56,7 +56,6 @@ class Router{
     {
         foreach (self::$routes as $pattern => $route){
             if(preg_match("#$pattern#i", $url, $matches)){
-                debug($matches);
                 foreach ($matches as $k => $v) {
                     if(is_string($k)){
                         $route[$k] = $v;
@@ -64,6 +63,12 @@ class Router{
                 }
                 if(!isset($route['action'])){
                     $route['action'] = 'index';
+                }
+                //prefix for admin controllers
+                if(!isset($route['prefix'])){
+                    $route['prefix'] = '';
+                }else{
+                    $route['prefix'] .= '\\';
                 }
                 $route['controller'] = self::upperCamelCase($route['controller']);
                 self::$route = $route;
