@@ -6,7 +6,7 @@
 
 use vendor\core\Router;
 
-define("DEBUG", 0);
+define("DEBUG", 1);
 
 $query = rtrim($_SERVER['QUERY_STRING'], '/');
 

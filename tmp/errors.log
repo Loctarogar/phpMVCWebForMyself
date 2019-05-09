@@ -10,3 +10,23 @@
 =Next Error=
 [2019-05-09 16:19:16] Error text:  | file:  | Line: 
 =Next Error=
+[2019-05-09 16:56:33] Error text: Controller doesn\'t exist | file: /var/www/phpMVCWebForMyself/vendor/core/Router.php | Line: 98
+=Next Error=
+[2019-05-09 16:56:33] Error text:  | file:  | Line: 
+=Next Error=
+[2019-05-09 16:56:55] Error text: Controller doesn\'t exist | file: /var/www/phpMVCWebForMyself/vendor/core/Router.php | Line: 98
+=Next Error=
+[2019-05-09 16:56:55] Error text:  | file:  | Line: 
+=Next Error=
+[2019-05-09 16:56:56] Error text: Controller doesn\'t exist | file: /var/www/phpMVCWebForMyself/vendor/core/Router.php | Line: 98
+=Next Error=
+[2019-05-09 16:56:56] Error text:  | file:  | Line: 
+=Next Error=
+[2019-05-09 16:57:06] Error text: Controller doesn\'t exist | file: /var/www/phpMVCWebForMyself/vendor/core/Router.php | Line: 98
+=Next Error=
+[2019-05-09 16:57:06] Error text:  | file:  | Line: 
+=Next Error=
+[2019-05-09 17:00:54] Error text: Controller doesn\'t exist | file: /var/www/phpMVCWebForMyself/vendor/core/Router.php | Line: 98
+=Next Error=
+[2019-05-09 17:00:54] Error text:  | file:  | Line: 
+=Next Error=
