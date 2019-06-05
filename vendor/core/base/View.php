@@ -42,7 +42,7 @@ class View {
         if(is_array($vars)){
             extract($vars);
         }
-        $file_view = APP."/views/{$this->route['controller']}/{$this->view}.php";
+        $file_view = APP."/views/{$this->route['prefix']}{$this->route['controller']}/{$this->view}.php";
         // output is stored in an internal buffer
         ob_start();
         if(is_file($file_view)){
