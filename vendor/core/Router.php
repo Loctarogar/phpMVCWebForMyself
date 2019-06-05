@@ -87,7 +87,7 @@ class Router{
         $url = self::removeQueryString($url);
         //var_dump($url);
         if(self::matchRoute($url)){
-            $controller = 'app\controllers\\'.self::$route['controller'].'Controller';
+            echo $controller = 'app\controllers\\'.self::$route['prefix'].self::$route['controller'].'Controller';
             //debug(self::$route);
             if(class_exists($controller)){
                 $cObj = new $controller(self::$route);

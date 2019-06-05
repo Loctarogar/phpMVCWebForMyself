@@ -64,3 +64,45 @@
 =Next Error=
 [2019-05-09 17:55:23] Error text:  | file:  | Line: 
 =Next Error=
+[2019-06-05 22:11:08] Error text:  | file:  | Line: 
+=Next Error=
+[2019-06-05 22:11:14] Error text:  | file:  | Line: 
+=Next Error=
+[2019-06-05 22:11:36] Error text: Controller app\controllers\UserController doesn\'t exist | file: /var/www/phpMVCWebForMyself/vendor/core/Router.php | Line: 104
+=Next Error=
+[2019-06-05 22:11:37] Error text:  | file:  | Line: 
+=Next Error=
+[2019-06-05 22:19:35] Error text: Controller app\controllers\UserController doesn\'t exist | file: /var/www/phpMVCWebForMyself/vendor/core/Router.php | Line: 104
+=Next Error=
+[2019-06-05 22:19:35] Error text:  | file:  | Line: 
+=Next Error=
+[2019-06-05 22:19:54] Error text: Controller app\controllers\UserController doesn\'t exist | file: /var/www/phpMVCWebForMyself/vendor/core/Router.php | Line: 104
+=Next Error=
+[2019-06-05 22:19:54] Error text:  | file:  | Line: 
+=Next Error=
+[2019-06-05 22:19:56] Error text: Controller app\controllers\UserController doesn\'t exist | file: /var/www/phpMVCWebForMyself/vendor/core/Router.php | Line: 104
+=Next Error=
+[2019-06-05 22:19:56] Error text:  | file:  | Line: 
+=Next Error=
+[2019-06-06 00:22:46] Error text: Controller app\controllers\UserController doesn\'t exist | file: /var/www/phpMVCWebForMyself/vendor/core/Router.php | Line: 104
+=Next Error=
+[2019-06-06 00:22:46] Error text:  | file:  | Line: 
+=Next Error=
+[2019-06-06 00:22:52] Error text: Controller app\controllers\TestController doesn\'t exist | file: /var/www/phpMVCWebForMyself/vendor/core/Router.php | Line: 104
+=Next Error=
+[2019-06-06 00:22:52] Error text:  | file:  | Line: 
+=Next Error=
+[2019-06-06 00:22:59] Error text: Controller app\controllers\UserController doesn\'t exist | file: /var/www/phpMVCWebForMyself/vendor/core/Router.php | Line: 104
+=Next Error=
+[2019-06-06 00:22:59] Error text:  | file:  | Line: 
+=Next Error=
+[2019-06-06 00:31:36] Error text:  | file:  | Line: 
+=Next Error=
+[2019-06-06 00:31:38] Error text:  | file:  | Line: 
+=Next Error=
+[2019-06-06 00:31:47] Error text:  | file:  | Line: 
+=Next Error=
+[2019-06-06 00:31:57] Error text: Controller app\controllers\admin\UserController doesn\'t exist | file: /var/www/phpMVCWebForMyself/vendor/core/Router.php | Line: 104
+=Next Error=
+[2019-06-06 00:31:57] Error text:  | file:  | Line: 
+=Next Error=
