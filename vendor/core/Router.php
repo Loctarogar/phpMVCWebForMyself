@@ -79,15 +79,15 @@ class Router{
     }
 
     /**
-     *
      * @param $url
+     * @throws \Exception
      */
     public static function dispatch($url)
     {
         $url = self::removeQueryString($url);
         //var_dump($url);
         if(self::matchRoute($url)){
-            echo $controller = 'app\controllers\\'.self::$route['prefix'].self::$route['controller'].'Controller';
+            $controller = 'app\controllers\\'.self::$route['prefix'].self::$route['controller'].'Controller';
             //debug(self::$route);
             if(class_exists($controller)){
                 $cObj = new $controller(self::$route);
