@@ -36,6 +36,10 @@ class View {
         $this->view = $view;
     }
 
+    /**
+     * @param $vars
+     * @throws \Exception
+     */
     public function render($vars)
     {
         //debug($vars);
@@ -48,7 +52,9 @@ class View {
         if(is_file($file_view)){
             require $file_view;
         }else{
-            echo "<p> The view {$file_view} doesn't found </p>";
+            //echo "<p> The view {$file_view} doesn't found </p>";
+            throw new \Exception("<p> The view {$file_view} doesn't found </p>",
+                404);
         }
 
         //data from buffer now in $content variable to send in layout
@@ -60,7 +66,9 @@ class View {
             if(is_file($file_layout)){
                 require $file_layout;
             }else{
-                echo "<h2>{$file_layout}</h2>template doesn't found";
+                //echo "<h2>{$file_layout}</h2>template doesn't found";
+                throw new \Exception("<h2>{$file_layout}</h2>template doesn't found",
+                    404);
             }
         }
     }

@@ -122,3 +122,15 @@
 =Next Error=
 [2019-06-06 00:58:22] Error text:  | file:  | Line: 
 =Next Error=
+[2019-06-06 23:26:50] Error text:  | file:  | Line: 
+=Next Error=
+[2019-06-06 23:27:02] Error text: <p> The view /var/www/phpMVCWebForMyself/app/views/admin\User/index.php doesn't found </p> | file: /var/www/phpMVCWebForMyself/vendor/core/base/View.php | Line: 56
+=Next Error=
+[2019-06-06 23:27:02] Error text:  | file:  | Line: 
+=Next Error=
+[2019-06-06 23:27:31] Error text:  | file:  | Line: 
+=Next Error=
+[2019-06-06 23:27:42] Error text: <p> The view /var/www/phpMVCWebForMyself/app/views/admin\User/index.php doesn't found </p> | file: /var/www/phpMVCWebForMyself/vendor/core/base/View.php | Line: 56
+=Next Error=
+[2019-06-06 23:27:42] Error text:  | file:  | Line: 
+=Next Error=
