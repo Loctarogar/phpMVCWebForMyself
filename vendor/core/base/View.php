@@ -42,6 +42,7 @@ class View {
      */
     public function render($vars)
     {
+        $this->route['prefix'] = str_replace('\\', '/', $this->route['prefix']);
         //debug($vars);
         if(is_array($vars)){
             extract($vars);

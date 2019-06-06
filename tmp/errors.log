@@ -134,3 +134,91 @@
 =Next Error=
 [2019-06-06 23:27:42] Error text:  | file:  | Line: 
 =Next Error=
+[2019-06-06 23:33:34] Error text: <p> The view /var/www/phpMVCWebForMyself/app/views/admin\User/index.php doesn't found </p> | file: /var/www/phpMVCWebForMyself/vendor/core/base/View.php | Line: 56
+=Next Error=
+[2019-06-06 23:33:34] Error text:  | file:  | Line: 
+=Next Error=
+[2019-06-06 23:33:35] Error text: <p> The view /var/www/phpMVCWebForMyself/app/views/admin\User/index.php doesn't found </p> | file: /var/www/phpMVCWebForMyself/vendor/core/base/View.php | Line: 56
+=Next Error=
+[2019-06-06 23:33:35] Error text:  | file:  | Line: 
+=Next Error=
+[2019-06-06 23:33:37] Error text: <p> The view /var/www/phpMVCWebForMyself/app/views/admin\User/index.php doesn't found </p> | file: /var/www/phpMVCWebForMyself/vendor/core/base/View.php | Line: 56
+=Next Error=
+[2019-06-06 23:33:37] Error text:  | file:  | Line: 
+=Next Error=
+[2019-06-06 23:34:17] Error text: <p> The view /var/www/phpMVCWebForMyself/app/views/admin\Test/index.php doesn't found </p> | file: /var/www/phpMVCWebForMyself/vendor/core/base/View.php | Line: 56
+=Next Error=
+[2019-06-06 23:34:17] Error text:  | file:  | Line: 
+=Next Error=
+[2019-06-06 23:35:12] Error text:  | file:  | Line: 
+=Next Error=
+[2019-06-06 23:35:43] Error text: <p> The view /var/www/phpMVCWebForMyself/app/views/admin\/Test/index.php doesn't found </p> | file: /var/www/phpMVCWebForMyself/vendor/core/base/View.php | Line: 56
+=Next Error=
+[2019-06-06 23:35:43] Error text:  | file:  | Line: 
+=Next Error=
+[2019-06-06 23:40:18] Error text: Controller app\controllers\admin/TestController doesn\'t exist | file: /var/www/phpMVCWebForMyself/vendor/core/Router.php | Line: 104
+=Next Error=
+[2019-06-06 23:40:18] Error text:  | file:  | Line: 
+=Next Error=
+[2019-06-07 00:07:00] Error text: Undefined property: vendor\core\base\View::$prefix | file: /var/www/phpMVCWebForMyself/vendor/core/base/View.php | Line: 45
+=Next Error=
+[2019-06-07 00:07:00] Error text:  | file:  | Line: 
+=Next Error=
+[2019-06-07 00:07:01] Error text: Undefined property: vendor\core\base\View::$prefix | file: /var/www/phpMVCWebForMyself/vendor/core/base/View.php | Line: 45
+=Next Error=
+[2019-06-07 00:07:01] Error text:  | file:  | Line: 
+=Next Error=
+[2019-06-07 00:08:07] Error text:  | file:  | Line: 
+=Next Error=
+[2019-06-07 00:10:10] Error text: <p> The view /var/www/phpMVCWebForMyself/app/views/admin\Test/index.php doesn't found </p> | file: /var/www/phpMVCWebForMyself/vendor/core/base/View.php | Line: 57
+=Next Error=
+[2019-06-07 00:10:10] Error text:  | file:  | Line: 
+=Next Error=
+[2019-06-07 00:11:09] Error text:  | file:  | Line: 
+=Next Error=
+[2019-06-07 00:11:40] Error text:  | file:  | Line: 
+=Next Error=
+[2019-06-07 00:11:40] Error text:  | file:  | Line: 
+=Next Error=
+[2019-06-07 00:11:47] Error text:  | file:  | Line: 
+=Next Error=
+[2019-06-07 00:11:47] Error text:  | file:  | Line: 
+=Next Error=
+[2019-06-07 00:12:12] Error text:  | file:  | Line: 
+=Next Error=
+[2019-06-07 00:12:22] Error text:  | file:  | Line: 
+=Next Error=
+[2019-06-07 00:12:23] Error text:  | file:  | Line: 
+=Next Error=
+[2019-06-07 00:12:26] Error text:  | file:  | Line: 
+=Next Error=
+[2019-06-07 00:12:41] Error text:  | file:  | Line: 
+=Next Error=
+[2019-06-07 00:12:41] Error text:  | file:  | Line: 
+=Next Error=
+[2019-06-07 00:12:45] Error text:  | file:  | Line: 
+=Next Error=
+[2019-06-07 00:12:52] Error text:  | file:  | Line: 
+=Next Error=
+[2019-06-07 00:12:55] Error text:  | file:  | Line: 
+=Next Error=
+[2019-06-07 00:13:12] Error text:  | file:  | Line: 
+=Next Error=
+[2019-06-07 00:13:12] Error text:  | file:  | Line: 
+=Next Error=
+[2019-06-07 00:13:24] Error text:  | file:  | Line: 
+=Next Error=
+[2019-06-07 00:13:38] Error text:  | file:  | Line: 
+=Next Error=
+[2019-06-07 00:14:22] Error text:  | file:  | Line: 
+=Next Error=
+[2019-06-07 00:17:10] Error text:  | file:  | Line: 
+=Next Error=
+[2019-06-07 00:17:15] Error text:  | file:  | Line: 
+=Next Error=
+[2019-06-07 00:23:51] Error text:  | file:  | Line: 
+=Next Error=
+[2019-06-07 00:24:19] Error text:  | file:  | Line: 
+=Next Error=
+[2019-06-07 00:24:35] Error text:  | file:  | Line: 
+=Next Error=
