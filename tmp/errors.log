@@ -222,3 +222,17 @@
 =Next Error=
 [2019-06-07 00:24:35] Error text:  | file:  | Line: 
 =Next Error=
+[2019-06-08 23:48:23] Error text:  | file:  | Line: 
+=Next Error=
+[2019-06-08 23:55:34] Error text:  | file:  | Line: 
+=Next Error=
+[2019-06-09 00:06:58] Error text:  | file:  | Line: 
+=Next Error=
+[2019-06-09 00:07:09] Error text: Class 'vendor\core\base\Model' not found | file: /var/www/phpMVCWebForMyself/app/models/Main.php | Line: /var/www/phpMVCWebForMyself/app/models/Main.php
+=Next Error=
+[2019-06-09 00:07:09] Error text: Class 'vendor\core\base\Model' not found | file: /var/www/phpMVCWebForMyself/app/models/Main.php | Line: /var/www/phpMVCWebForMyself/app/models/Main.php
+=Next Error=
+[2019-06-09 00:08:14] Error text:  | file:  | Line: 
+=Next Error=
+[2019-06-09 00:08:21] Error text:  | file:  | Line: 
+=Next Error=

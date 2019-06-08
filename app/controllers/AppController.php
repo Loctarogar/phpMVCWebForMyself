@@ -2,7 +2,7 @@
 
 namespace app\controllers;
 
-use vendor\core\base\Controller;
+use vendor\projectFiles\core\base\Controller;
 
 class AppController extends Controller{
 

@@ -1,7 +1,7 @@
 <?php
 
 
-namespace vendor\core;
+namespace vendor\projectFiles\core;
 
 ini_set('display_errors', 1);
 
@@ -57,14 +57,14 @@ class ErrorHandler
     protected function displayError($errno, $errstr, $errfile, $errline, $response = 500){
         http_response_code($response);
         if($response == 404 && !DEBUG){
-            require WWW.'/errorsPages/404.html';
+            require WWW . '/errorsPages/404.html';
             die;
         }
 
         if(DEBUG){
-            require WWW.'/errorsPages/dev.php';
+            require WWW . '/errorsPages/dev.php';
         }else{
-            require WWW.'/errorsPages/prod';
+            require WWW . '/errorsPages/prod';
         }
         die;
     }

@@ -4,7 +4,7 @@
 //ini_set('display_errors', 1);
 //error_reporting(-1);
 
-use vendor\core\Router;
+use vendor\projectFiles\core\Router;
 
 define("DEBUG", 1);
 
@@ -14,9 +14,9 @@ $query = rtrim($_SERVER['QUERY_STRING'], '/');
 //public directory
 define('WWW', __DIR__);
 //libs directory
-define('LIBS', dirname(__DIR__).'/vendor/libs');
+define('LIBS', dirname(__DIR__) . '/vendor/projectFiles/libs');
 //constant for 'core' directory
-define('CORE', dirname(__DIR__).'/vendor/core');
+define('CORE', dirname(__DIR__) . '/vendor/projectFiles/core');
 //'root' directory
 define('ROOT', dirname(__DIR__));
 //'app' directory
@@ -26,7 +26,7 @@ define('LAYOUT', 'default');
 //const for cache directory
 define('CACHE', dirname(__DIR__).'/tmp/cache');
 
-require '../vendor/libs/functions.php';
+require '../vendor/projectFiles/libs/functions.php';
 //debug($_GET);
 spl_autoload_register(function ($class) {
     $file = ROOT.'/'.str_replace('\\', '/', $class).'.php';
@@ -35,7 +35,7 @@ spl_autoload_register(function ($class) {
     }
 });
 
-new \vendor\core\App();
+new \vendor\projectFiles\core\App();
 
 Router::add('^page/?(?P<action>[a-z-]+)?/?(?P<alias>[a-z-]+)?$', ['controller' => 'Page']);
 Router::add('^page/?(?P<alias>[a-z-]+)?$', ['controller' => 'Page', 'action' => 'view']);

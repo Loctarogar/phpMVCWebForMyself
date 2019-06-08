@@ -3,7 +3,7 @@
 
 namespace app\controllers\admin;
 
-use vendor\core\base\Controller;
+use vendor\projectFiles\core\base\Controller;
 
 
 class AppController extends Controller

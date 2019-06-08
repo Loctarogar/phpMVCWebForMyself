@@ -1,6 +1,6 @@
 <?php
 
-namespace vendor\libs;
+namespace vendor\projectFiles\libs;
 
 class Cache {
     public function __construct()

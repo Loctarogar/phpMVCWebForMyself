@@ -1,6 +1,6 @@
 <?php
 
-namespace vendor\core;
+namespace vendor\projectFiles\core;
 use R;
 
 class Db{
@@ -16,8 +16,8 @@ class Db{
 
     protected function __construct()
     {
-        $db = require ROOT.'/config/config_db.php';
-        require LIBS.'/rb-mysql.php';
+        $db = require ROOT . '/config/config_db.php';
+        require LIBS . '/rb-mysql.php';
         R::setup($db['dsn'], $db['user'],$db['pass']);
         R::freeze(true);
     }
