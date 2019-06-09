@@ -3,13 +3,26 @@
 
 namespace app\controllers\admin;
 
-
+use Monolog\Logger;
+use Monolog\Handler\StreamHandler;
 use projectFiles\core\base\View;
 
 class UserController extends AppController
 {
+    /**
+     * @throws \Exception
+     */
     public function indexAction(){
-        $test = "test var";
+
+        // create a log channel
+        $log = new Logger('name');
+        $log->pushHandler(new StreamHandler(ROOT.'tmp/your.log', Logger::WARNING));
+
+        // add records to the log
+        $log->warning('Foo');
+        $log->error('Bar');
+
+        $test = "test var 1";
         $this->set(
           ["test" => $test]
         );
