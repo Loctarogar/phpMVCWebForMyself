@@ -16,8 +16,8 @@ class ErrorHandler
         }
 
         // вказуемо функцію для обробки помилок
-        set_error_handler([$this, "errorHandler"]);
         ob_start();
+        set_error_handler([$this, "errorHandler"]);
         set_exception_handler([$this, "exceptionHandler"]);
         register_shutdown_function([$this, "fatalErrorHandler"]);
     }
@@ -32,7 +32,6 @@ class ErrorHandler
 
     public function fatalErrorHandler(){
         $error = error_get_last();
-        $this->logErrors($error['message'], $error['file'], $error['file']);
         //error_log("[".date('Y-m-d H:i:s')."] Error text: {$error['message']} | file: {$error['file']} | Line: {$error['file']}\n=Next Error=\n", 3, __DIR__.'/errors.log');
         if( !empty($error) AND $error['type'] & (E_ERROR | E_PARSE | E_COMPILE_ERROR | E_CORE_ERROR) ){
             $this->logErrors($error['message'], $error['file'], $error['file']);
@@ -64,7 +63,7 @@ class ErrorHandler
         if(DEBUG){
             require WWW . '/errorsPages/dev.php';
         }else{
-            require WWW . '/errorsPages/prod';
+            require WWW . '/errorsPages/prod.php';
         }
         die;
     }

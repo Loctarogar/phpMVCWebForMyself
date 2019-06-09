@@ -1,6 +1,8 @@
 {
     "name": "morilon/php-mvc-web-for-myself",
-    "require": {},
+    "require": {
+        "monolog/monolog": "^1.24"
+    },
     "autoload": {
         "psr-4": {
             "projectFiles\\": "vendor/projectFiles/",
