@@ -1,7 +1,7 @@
 <?php
 
 
-namespace vendor\projectFiles\core;
+namespace projectFiles\core;
 
 
 trait TSingletone

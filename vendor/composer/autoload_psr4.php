@@ -6,6 +6,6 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'phpMVCWebForMyself\\' => array($vendorDir . '/projectFiles'),
+    'projectFiles\\' => array($vendorDir . '/projectFiles'),
     'app\\' => array($baseDir . '/app'),
 );

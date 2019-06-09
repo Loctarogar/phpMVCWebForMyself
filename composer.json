@@ -1,9 +1,9 @@
 {
-    "name": "www/phpMVCWebForMyself",
+    "name": "morilon/php-mvc-web-for-myself",
     "require": {},
     "autoload": {
         "psr-4": {
-            "projectFiles\\": "vendor/projectFiles",
+            "projectFiles\\": "vendor/projectFiles/",
             "app\\": "app"
         }
     }

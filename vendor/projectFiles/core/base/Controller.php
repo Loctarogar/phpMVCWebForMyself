@@ -1,6 +1,6 @@
 <?php
 
-namespace vendor\projectFiles\core\base;
+namespace projectFiles\core\base;
 
 abstract class Controller{
 

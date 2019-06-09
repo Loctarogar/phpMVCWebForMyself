@@ -4,7 +4,7 @@
 //ini_set('display_errors', 1);
 //error_reporting(-1);
 
-use vendor\projectFiles\core\Router;
+use projectFiles\core\Router;
 
 define("DEBUG", 1);
 
@@ -41,7 +41,7 @@ spl_autoload_register(function ($class) {
 
 
 
-//new \vendor\projectFiles\core\App();
+new projectFiles\core\App();
 
 Router::add('^page/?(?P<action>[a-z-]+)?/?(?P<alias>[a-z-]+)?$', ['controller' => 'Page']);
 Router::add('^page/?(?P<alias>[a-z-]+)?$', ['controller' => 'Page', 'action' => 'view']);

@@ -6,4 +6,24 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'app\\controllers\\AppController' => $baseDir . '/app/controllers/AppController.php',
+    'app\\controllers\\MainController' => $baseDir . '/app/controllers/MainController.php',
+    'app\\controllers\\PageController' => $baseDir . '/app/controllers/PageController.php',
+    'app\\controllers\\PostsController' => $baseDir . '/app/controllers/PostsController.php',
+    'app\\controllers\\PostsNewController' => $baseDir . '/app/controllers/PostsNewController.php',
+    'app\\controllers\\admin\\AppController' => $baseDir . '/app/controllers/admin/AppController.php',
+    'app\\controllers\\admin\\TestController' => $baseDir . '/app/controllers/admin/TestController.php',
+    'app\\controllers\\admin\\UserController' => $baseDir . '/app/controllers/admin/UserController.php',
+    'app\\models\\Main' => $baseDir . '/app/models/Main.php',
+    'projectFiles\\core\\App' => $vendorDir . '/projectFiles/core/App.php',
+    'projectFiles\\core\\Db' => $vendorDir . '/projectFiles/core/Db.php',
+    'projectFiles\\core\\ErrorHandler' => $vendorDir . '/projectFiles/core/ErrorHandler.php',
+    'projectFiles\\core\\Registry' => $vendorDir . '/projectFiles/core/Registry.php',
+    'projectFiles\\core\\Router' => $vendorDir . '/projectFiles/core/Router.php',
+    'projectFiles\\core\\TSingletone' => $vendorDir . '/projectFiles/core/TSingletone.php',
+    'projectFiles\\core\\base\\Controller' => $vendorDir . '/projectFiles/core/base/Controller.php',
+    'projectFiles\\core\\base\\Model' => $vendorDir . '/projectFiles/core/base/Model.php',
+    'projectFiles\\core\\base\\View' => $vendorDir . '/projectFiles/core/base/View.php',
+    'projectFiles\\libs\\Cache' => $vendorDir . '/projectFiles/libs/Cache.php',
+    'projectFiles\\libs\\Test' => $vendorDir . '/projectFiles/libs/Test.php',
 );

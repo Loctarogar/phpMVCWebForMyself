@@ -2,7 +2,7 @@
 
 namespace app\models;
 
-use vendor\projectFiles\core\base\Model;
+use projectFiles\core\base\Model;
 
 class Main extends Model {
     public $table = 'posts';
