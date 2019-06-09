@@ -27,15 +27,21 @@ define('LAYOUT', 'default');
 define('CACHE', dirname(__DIR__).'/tmp/cache');
 
 require '../vendor/projectFiles/libs/functions.php';
+require __DIR__ . '/../vendor/autoload.php';
+
 //debug($_GET);
+/**
 spl_autoload_register(function ($class) {
     $file = ROOT.'/'.str_replace('\\', '/', $class).'.php';
     if(is_file($file)){
         require_once $file;
     }
 });
+ */
 
-new \vendor\projectFiles\core\App();
+
+
+//new \vendor\projectFiles\core\App();
 
 Router::add('^page/?(?P<action>[a-z-]+)?/?(?P<alias>[a-z-]+)?$', ['controller' => 'Page']);
 Router::add('^page/?(?P<alias>[a-z-]+)?$', ['controller' => 'Page', 'action' => 'view']);

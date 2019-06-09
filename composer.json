@@ -3,7 +3,7 @@
     "require": {},
     "autoload": {
         "psr-4": {
-            "phpMVCWebForMyself\\": "vendor/projectFiles",
+            "projectFiles\\": "vendor/projectFiles",
             "app\\": "app"
         }
     }

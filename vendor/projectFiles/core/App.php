@@ -1,8 +1,8 @@
 <?php
 
-namespace vendor\projectFiles\core;
+namespace projectFiles\core;
 
-use vendor\projectFiles\core\Registry;
+use projectFiles\core\Registry;
 
 class App{
     public static $app;
