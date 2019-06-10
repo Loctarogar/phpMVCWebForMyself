@@ -1,2 +1,6 @@
 John Doe
 Jane Doe
+[2019-06-10 23:23:52] Error text: Page doesn't found | file: /var/www/phpMVCWebForMyself/vendor/projectFiles/core/Router.php | Line: 109
+=Next Error=
+[2019-06-10 23:24:31] Error text: <p> The view /var/www/phpMVCWebForMyself/app/views/User/logout.php doesn't found </p> | file: /var/www/phpMVCWebForMyself/vendor/projectFiles/core/base/View.php | Line: 57
+=Next Error=
