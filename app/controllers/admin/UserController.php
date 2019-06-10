@@ -13,16 +13,16 @@ class UserController extends AppController
      * @throws \Exception
      */
     public function indexAction(){
-
+        
         // create a log channel
         $log = new Logger('name');
-        $log->pushHandler(new StreamHandler(ROOT.'tmp/your.log', Logger::WARNING));
+        $log->pushHandler(new StreamHandler(ROOT.'tmp/errors.log', Logger::WARNING));
 
         // add records to the log
         $log->warning('Foo');
         $log->error('Bar');
 
-        $test = "test var 1";
+        $test = "test var 11";
         $this->set(
           ["test" => $test]
         );
