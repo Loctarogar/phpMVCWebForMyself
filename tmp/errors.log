@@ -4,3 +4,5 @@ Jane Doe
 =Next Error=
 [2019-06-10 23:24:31] Error text: <p> The view /var/www/phpMVCWebForMyself/app/views/User/logout.php doesn't found </p> | file: /var/www/phpMVCWebForMyself/vendor/projectFiles/core/base/View.php | Line: 57
 =Next Error=
+[2019-06-10 23:37:30] Error text: Method app\controllers\UserController indexAction doesn\'t found | file: /var/www/phpMVCWebForMyself/vendor/projectFiles/core/Router.php | Line: 100
+=Next Error=
