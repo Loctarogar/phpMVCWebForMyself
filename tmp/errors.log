@@ -1,8 +1,28 @@
-John Doe
-Jane Doe
-[2019-06-10 23:23:52] Error text: Page doesn't found | file: /var/www/phpMVCWebForMyself/vendor/projectFiles/core/Router.php | Line: 109
+[2019-06-11 20:02:47] Error text: syntax error, unexpected end of file | file: /var/www/phpMVCWebForMyself/app/views/User/signup.php | Line: 24
 =Next Error=
-[2019-06-10 23:24:31] Error text: <p> The view /var/www/phpMVCWebForMyself/app/views/User/logout.php doesn't found </p> | file: /var/www/phpMVCWebForMyself/vendor/projectFiles/core/base/View.php | Line: 57
+[2019-06-11 20:02:48] Error text: syntax error, unexpected end of file | file: /var/www/phpMVCWebForMyself/app/views/User/signup.php | Line: 24
 =Next Error=
-[2019-06-10 23:37:30] Error text: Method app\controllers\UserController indexAction doesn\'t found | file: /var/www/phpMVCWebForMyself/vendor/projectFiles/core/Router.php | Line: 100
+[2019-06-11 20:03:10] Error text: syntax error, unexpected end of file | file: /var/www/phpMVCWebForMyself/app/views/User/signup.php | Line: 24
+=Next Error=
+[2019-06-11 20:03:11] Error text: syntax error, unexpected end of file | file: /var/www/phpMVCWebForMyself/app/views/User/signup.php | Line: 24
+=Next Error=
+[2019-06-11 20:03:11] Error text: syntax error, unexpected end of file | file: /var/www/phpMVCWebForMyself/app/views/User/signup.php | Line: 24
+=Next Error=
+[2019-06-11 20:03:11] Error text: syntax error, unexpected end of file | file: /var/www/phpMVCWebForMyself/app/views/User/signup.php | Line: 24
+=Next Error=
+[2019-06-11 20:03:21] Error text: syntax error, unexpected end of file | file: /var/www/phpMVCWebForMyself/app/views/User/signup.php | Line: 23
+=Next Error=
+[2019-06-11 20:03:22] Error text: syntax error, unexpected end of file | file: /var/www/phpMVCWebForMyself/app/views/User/signup.php | Line: 23
+=Next Error=
+[2019-06-11 20:03:22] Error text: syntax error, unexpected end of file | file: /var/www/phpMVCWebForMyself/app/views/User/signup.php | Line: 23
+=Next Error=
+[2019-06-11 20:03:22] Error text: syntax error, unexpected end of file | file: /var/www/phpMVCWebForMyself/app/views/User/signup.php | Line: 23
+=Next Error=
+[2019-06-11 20:03:34] Error text: syntax error, unexpected '}', expecting ',' or ';' | file: /var/www/phpMVCWebForMyself/app/views/User/signup.php | Line: 6
+=Next Error=
+[2019-06-11 20:03:34] Error text: syntax error, unexpected '}', expecting ',' or ';' | file: /var/www/phpMVCWebForMyself/app/views/User/signup.php | Line: 6
+=Next Error=
+[2019-06-11 20:05:25] Error text: syntax error, unexpected end of file | file: /var/www/phpMVCWebForMyself/app/views/User/signup.php | Line: 24
+=Next Error=
+[2019-06-11 20:05:26] Error text: syntax error, unexpected end of file | file: /var/www/phpMVCWebForMyself/app/views/User/signup.php | Line: 24
 =Next Error=
