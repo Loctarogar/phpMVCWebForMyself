@@ -26,3 +26,5 @@
 =Next Error=
 [2019-06-11 20:05:26] Error text: syntax error, unexpected end of file | file: /var/www/phpMVCWebForMyself/app/views/User/signup.php | Line: 24
 =Next Error=
+[2019-06-11 20:17:29] Error text: Fail to load language file '/var/www/phpMVCWebForMyself/vendor/vlucas/valitron/lang/ua.php' | file: /var/www/phpMVCWebForMyself/vendor/vlucas/valitron/src/Valitron/Validator.php | Line: 113
+=Next Error=

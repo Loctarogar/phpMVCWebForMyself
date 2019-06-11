@@ -30,6 +30,7 @@ abstract class Model{
 
     public function validate($data)
     {
+        Validator::lang('uk');
         $v = new Validator($data);
         $v->rules($this->rules);
         if($v->validate()){
