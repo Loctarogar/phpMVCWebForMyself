@@ -3,7 +3,9 @@
 </head>
 <body>
 <h2>Default Layout</h2>
+<p>          </p>
 <div>
+    <?php debug($_SESSION) ;?>
 
     <?php if (isset($_SESSION['error'])) {; ?>
         <?php print_r($_SESSION['error']); unset($_SESSION['error']); ?>

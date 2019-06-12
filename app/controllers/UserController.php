@@ -32,10 +32,25 @@ class UserController extends AppController
 
     public function loginAction()
     {
+        if(!empty($_POST)){
+            var_dump($_POST);
+            $user = new User();
+            if($user->login()){
+                $_SESSION['success'] = 'You authorised successfully';
+            }else{
+                $_SESSION['error'] = 'Use correct login/password';
+            }
 
+            redirect();
+        }
     }
+
     public function logoutAction()
     {
+        if(isset($_SESSION['user'])){
+            unset($_SESSION['user']);
+        }
 
+        redirect('/');
     }
 }

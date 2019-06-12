@@ -28,3 +28,19 @@
 =Next Error=
 [2019-06-11 20:17:29] Error text: Fail to load language file '/var/www/phpMVCWebForMyself/vendor/vlucas/valitron/lang/ua.php' | file: /var/www/phpMVCWebForMyself/vendor/vlucas/valitron/src/Valitron/Validator.php | Line: 113
 =Next Error=
+[2019-06-12 23:06:40] Error text: Page doesn't found | file: /var/www/phpMVCWebForMyself/vendor/projectFiles/core/Router.php | Line: 109
+=Next Error=
+[2019-06-12 23:14:48] Error text: Undefined variable: bufer | file: /var/www/phpMVCWebForMyself/vendor/projectFiles/core/base/View.php | Line: 41
+=Next Error=
+[2019-06-12 23:14:49] Error text: Undefined variable: bufer | file: /var/www/phpMVCWebForMyself/vendor/projectFiles/core/base/View.php | Line: 41
+=Next Error=
+[2019-06-12 23:14:49] Error text: Undefined variable: bufer | file: /var/www/phpMVCWebForMyself/vendor/projectFiles/core/base/View.php | Line: 41
+=Next Error=
+[2019-06-12 23:14:49] Error text: Undefined variable: bufer | file: /var/www/phpMVCWebForMyself/vendor/projectFiles/core/base/View.php | Line: 41
+=Next Error=
+[2019-06-12 23:14:49] Error text: Undefined variable: bufer | file: /var/www/phpMVCWebForMyself/vendor/projectFiles/core/base/View.php | Line: 41
+=Next Error=
+[2019-06-12 23:21:10] Error text: preg_replace(): No ending delimiter '/' found | file: /var/www/phpMVCWebForMyself/vendor/projectFiles/core/base/View.php | Line: 61
+=Next Error=
+[2019-06-12 23:21:11] Error text: preg_replace(): No ending delimiter '/' found | file: /var/www/phpMVCWebForMyself/vendor/projectFiles/core/base/View.php | Line: 61
+=Next Error=

@@ -36,6 +36,31 @@ class View {
         $this->view = $view;
     }
 
+    protected function compressPage($buffer)
+    {
+        //return $buffer;
+
+        $search = [
+            "/(\n)+/",
+            "/\r\n+/",
+            "/\n(\t)+/",
+            "/\n(\ )+/",
+            "/\>(\n)+</",
+            "/\>\r\n</",
+        ];
+
+        $replace = [
+            "\n",
+            "\n",
+            "\n",
+            "\n",
+            '><',
+            '><',
+        ];
+
+        return preg_replace($search, $replace, $buffer);
+    }
+
     /**
      * @param $vars
      * @throws \Exception
@@ -49,7 +74,7 @@ class View {
         }
         $file_view = APP."/views/{$this->route['prefix']}{$this->route['controller']}/{$this->view}.php";
         // output is stored in an internal buffer
-        ob_start();
+        ob_start([$this, 'compressPage']);
         if(is_file($file_view)){
             require $file_view;
         }else{
@@ -59,7 +84,9 @@ class View {
         }
 
         //data from buffer now in $content variable to send in layout
-        $content = ob_get_clean();
+        //$content = ob_get_clean();
+        $content = ob_get_contents();
+        ob_clean();
         //
 
         if(false !== $this->layout){

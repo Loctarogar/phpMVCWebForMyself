@@ -49,4 +49,27 @@ class User extends Model
 
         return true;
     }
+
+    public function login()
+    {
+        debug($_POST);
+        $login = !empty(rtrim($_POST['login'])) ? rtrim($_POST['login']) : null;
+        $password = !empty(rtrim($_POST['password'])) ? rtrim($_POST['password']) : null;
+        if($login && $password){
+            $user = \R::findOne('user', 'login = ? LIMIT 1', [$login]);
+            if($user){
+                if(password_verify($password, $user->password)){
+                    foreach ($user as $key => $value){
+                        if($key != 'password'){
+                            $_SESSION['user'][$key] = $value;
+                        }
+                    }
+
+                    return true;
+                }
+            }
+        }
+
+        return false;
+    }
 }
